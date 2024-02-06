@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class=" header hide">
+        <p>Digite somente Números</p>
+    </header>
+    <main>
+        <div class="card">
+            <legend>Cálculo de IMC</legend>
+            <form class="elements">
+                <label class="label" for="weight">Peso(Kg)</label><br>
+                <input type="number" id="weight" name="weight" placeholder="Digite seu peso"><br>
+                <label for="height">Altura(m)</label><br>
+                <input type="number" oninput="mascara()" class="height" id="height" name="height" placeholder="Digite sua altura">
+            </form>
+            <button id="button">Calcular IMC</button>
+        </div>
+        </div>
+    </main>
+    <div class="m1 hide">
+      <div class="modal-wrapper">
+        <div class="modal">
+            <h2 class="title">
+                Seu IMC É DE 22
+            </h2>
+            <button id="close"  >
+                <svg id="svg"  width="1.5rem" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
+                </svg>
+            </button>
+        </div>
+    </div>  
+    </div>
+    
+</body>
+
+</html>

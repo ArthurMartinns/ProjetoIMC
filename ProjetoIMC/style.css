@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  font-size: 62.5%;
+  --fs-heading-h1: 3.2rem;
+  --fs-texting-p-16: 1.6rem;
+  --fs-texting-p-14: 1.4rem;
+  --background-color: #040924;
+  --background-card: #fff;
+  --text-h1: #0c3440;
+  --text-h2: #00453a;
+  --text-input: #212529;
+  --background-header: #f03e3e;
+  --background-input: #dce2e9;
+  --stroke: #02799d;
+}
+body {
+  background-color: var(--background-color);
+  height: 100vh;
+}
+header {
+  background-color: var(--background-header);
+  width: 100%;
+  height: 3.6rem;
+}
+header p {
+  color: var(--background-card);
+  font-size: var(--fs-texting-p-16);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 0;
+}
+.hide {
+  display: none;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.card {
+  background-color: var(--background-card);
+
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4.8rem 6.4rem;
+}
+legend {
+  font-weight: bold;
+  font-size: var(--fs-heading-h1);
+  color: var(--text-h1);
+}
+.elements {
+  margin-top: 3.2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  max-width: 30rem;
+}
+label {
+  font-size: var(--fs-texting-p-14);
+  color: var(--text-h2);
+}
+input {
+  padding: 1.6rem;
+  background-color: var(--background-input);
+  border: 1px solid var(--stroke);
+  border-radius: 0.4rem;
+}
+#button {
+  padding: 1.6rem;
+  background-color: var(--stroke);
+  color: var(--background-card);
+  font-size: var(--fs-texting-p-16);
+  border: 1px solid var(--stroke);
+  margin-top: 3.2rem;
+  border-radius: 0.4rem;
+  font-weight: 800;
+}
+
+.modal-wrapper {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+  background-color: var(--background-card);
+  padding: 4.8rem 6.4rem;
+  border-radius: 0.8rem;
+  position: relative;
+}
+
+.title {
+  font-size: var(--fs-heading-h1);
+  color: var(--text-h1);
+}
+#svg {
+  position: absolute;
+  right: 1.6rem;
+  top: 1.6rem;
+}
